@@ -1,0 +1,26 @@
+FROM node:12.18.1-alpine
+
+ARG DBHOST
+ARG DBUSER
+ARG DBPASS
+ARG DBTYPE
+ARG DBNAME
+
+ENV DBHOST=$DBHOST
+ENV DBUSER=$DBUSER
+ENV DBPASS=$DBPASS
+ENV DBTYPE=$DBTYPE
+ENV DBNAME=$DBNAME
+ENV PORT=80
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install --only=production
+
+COPY ./src ./src
+
+# RUN npm install -g migrate
+CMD cd src && \
+   npm start 
