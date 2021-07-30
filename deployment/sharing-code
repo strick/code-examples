@@ -22,7 +22,7 @@ FROM node:12.18.1-alpine
 WORKDIR /usr/src/app
 
 # copy the repository form the previous image
-COPY --from=intermediate /common-gtt /usr/src/app/lib/common-gtt
+COPY --from=intermediate /my-private-repo /usr/src/app/lib/my-private-repo
 
 COPY package*.json ./
 
