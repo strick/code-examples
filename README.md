@@ -3,7 +3,7 @@ A place for me to self document common things I do and hopefully help other Goog
 
 ## Docker 
 ### Docker Deployments using Azure Pipelines
-- [Docker File](https://github.com/strick/code-examples/blob/main/deployment/azure-devops/Docker-prod)
+- [Docker File](https://github.com/strick/code-examples/blob/main/deployment/azure-devops/Dockerfile-prod)
 - [Azure Pipeline YAML](https://github.com/strick/code-examples/blob/main/deployment/azure-devops/azure-pipelines.yml)
 ### Including private GitHub during Docker build
 - https://github.com/strick/code-examples/edit/main/deployment/sharing-code
