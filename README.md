@@ -11,3 +11,4 @@ A place for me to self document common things I do and hopefully help other Goog
 ## Coming Soon
 - Authentication and Authorization with Auth0
 - Containerized Azure App Services Deployments with Terraform
+- Adding Swagger documentation to your APIs 
