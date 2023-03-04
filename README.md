@@ -12,3 +12,6 @@ A place for me to self document common things I do and hopefully help other Goog
 - Authentication and Authorization with Auth0
 - Containerized Azure App Services Deployments with Terraform
 - Adding Swagger documentation to your APIs 
+
+## Misc
+- [ROMS](https://github.com/strick/code-examples/blob/main/Nintendo.sh)
