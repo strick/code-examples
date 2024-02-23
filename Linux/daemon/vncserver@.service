@@ -1,0 +1,21 @@
+# Lets me auto start vnc server for my ultrawide
+# Create in /etc/systemd/system/vncserver@.service
+# sudo systemctl daemon-restart
+# sudo systemctl enable vncserver@1.service to run on 5901 port
+
+[Unit]
+Description=Start TightVNC server for UltraWide display on startup
+After=syslog.target network.target
+
+[Service]
+Type=forking
+User=yourusername
+Group=yourusername
+WorkingDirectory=/home/yourusername
+
+PIDFile=/home/yourusername/.vnc/%H:%i.pid
+ExecStart=/usr/bin/vncserver -depth 24 -geometry 5120x1440 :%i
+ExecStop=/usr/bin/vncserver -kill :%i
+
+[Install]
+WantedBy=multi-user.target
